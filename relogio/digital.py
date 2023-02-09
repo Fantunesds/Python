@@ -2,7 +2,9 @@ from tkinter import*
 import tkinter 
 from datetime import datetime
 import pyglet
-pyglet.font.add_file("ninepin.ttf")
+pyglet.font.add_file('digital-7.ttf')
+
+
 
 ####### cores #######
 cor1 = '#3d3d3d' # preto
@@ -12,7 +14,7 @@ cor4 = '#eb463b' # vermelho
 cor5 = 'dedcdc' # cinza
 cor6 = '3080f0' # azul
 fundo = cor1
-cor = cor2
+cor = cor3
 
 janela = Tk()
 janela.title("")
@@ -34,10 +36,10 @@ def relogio():
     l1.after(200, relogio)
     l2.config(text=dia_semana + "  " + str(dia) + "/" + str(mes) + "/" + str(ano))
 
-l1 = Label(janela, text="", font=("ninepin.ttf 80"), bg=fundo, fg=cor)
+l1 = Label(janela, text="", font=("digital-7 80"), bg=fundo, fg=cor)
 l1.grid(row=0,column=0, sticky=NW, padx=5)
 
-l2 = Label(janela, text="", font=("ninepin.ttf 20"), bg=fundo, fg=cor)
+l2 = Label(janela, text="", font=("digital-7  17"), bg=fundo, fg=cor)
 l2.grid(row=1,column=0, sticky=NW, padx=5)
 
 
